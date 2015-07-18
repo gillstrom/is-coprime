@@ -1,6 +1,6 @@
 {
   "name": "is-coprime",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if two integers are coprime.",
   "license": "MIT",
   "repository": "gillstrom/is-coprime",
