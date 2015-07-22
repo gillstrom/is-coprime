@@ -1,6 +1,6 @@
 # is-coprime [![Build Status](https://travis-ci.org/gillstrom/is-coprime.svg?branch=master)](https://travis-ci.org/gillstrom/is-coprime)
 
-> Check if two integers are coprime.
+> Check if two integers are [coprime](https://en.wikipedia.org/wiki/Coprime_integers).
 
 Two integers are said to be relatively prime, mutually prime, or coprime if the only positive integer that evenly divides both of them is 1.
 
