@@ -1,8 +1,7 @@
-'use strict';
-var test = require('ava');
-var fn = require('./');
+import test from 'ava';
+import fn from './';
 
-test('Should return true', function (t) {
+test('Should return true', t => {
 	t.true(fn(2, 5));
 	t.true(fn(12, 25));
 	t.true(fn(13, 17));
@@ -10,7 +9,7 @@ test('Should return true', function (t) {
 	t.end();
 });
 
-test('Should return false', function (t) {
+test('Should return false', t => {
 	t.false(fn(6, 12));
 	t.false(fn(12, 21));
 	t.false(fn(3, 6));
