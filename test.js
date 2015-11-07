@@ -1,18 +1,20 @@
 'use strict';
-var assert = require('assert');
-var isCoprime = require('./');
+var test = require('ava');
+var fn = require('./');
 
-it('Should return true', function () {
-	assert.strictEqual(isCoprime(2, 5), true);
-	assert.strictEqual(isCoprime(12, 25), true);
-	assert.strictEqual(isCoprime(13, 17), true);
-	assert.strictEqual(isCoprime(1, 5), true);
+test('Should return true', function (t) {
+	t.true(fn(2, 5));
+	t.true(fn(12, 25));
+	t.true(fn(13, 17));
+	t.true(fn(1, 5));
+	t.end();
 });
 
-it('Should return false', function () {
-	assert.strictEqual(isCoprime(6, 12), false);
-	assert.strictEqual(isCoprime(12, 21), false);
-	assert.strictEqual(isCoprime(3, 6), false);
-	assert.strictEqual(isCoprime(25, 50), false);
-	assert.strictEqual(isCoprime(2.5, 5.5), false);
+test('Should return false', function (t) {
+	t.false(fn(6, 12));
+	t.false(fn(12, 21));
+	t.false(fn(3, 6));
+	t.false(fn(25, 50));
+	t.false(fn(2.5, 5.5));
+	t.end();
 });
