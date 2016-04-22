@@ -15,7 +15,7 @@ $ npm install --save is-coprime
 ## Usage
 
 ```js
-var isCoprime = require('is-coprime');
+const isCoprime = require('is-coprime');
 
 isCoprime(2, 5);
 //=> true
